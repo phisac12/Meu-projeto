@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+
+    <title>Login brothers!</title>
+   <style>
+    
+       body{
+           
+           background-color:currentColor;
+           max-width:99%;
+           
+           
+       }
+       
+       form {
+           color:white;
+           
+       }
+       
+       h1{
+        
+        
+        font-family:coolvetica;
+    }
+    
+    @font-face {
+        
+        src: url(fonts/coolvetica_rg.ttf);
+        font-family:coolvetica;
+            
+    }
+       
+       .font-main2 {
+           
+           font-size:90px;
+           /*filter:drop-shadow(-30px 15px 25px #ccc);*/
+       }
+       
+       .two-font{
+           
+           font-size:37px;
+           color:#8a58fa;
+       }
+       
+      
+       
+       #logo{
+           
+           width:40%;
+           height:40%;
+           margin-top:30%;
+           margin-bottom:15%;
+           margin-left:36%;
+           /*filter:drop-shadow(-15px 25px 10px #faf2f2);*/
+           
+       }
+       
+       .imgcentro {
+           
+           width:50%;
+           height:60%;
+           margin-left:25%;
+           
+           
+       }
+       
+       hr {
+
+           border:2px solid #6c26d6;
+           margin-left:4%;
+           
+       }
+       
+       button{
+           
+           background-color:#6c26d6 !important;
+           border:none !important;
+           border-radius:8px !important;
+       }
+       
+       button:hover {
+           
+          
+           border:none;
+       }
+       
+       button:hover {
+           
+           transition: .3s;
+           background-color:#76658e !important; 
+       }
+       
+       fieldset{
+           
+           border:2px solid white;
+           border-radius:10px;
+           margin-right:5%;
+           
+           
+       }
+       
+       .buttonregister3{
+           
+           background-color:#6c26d6;        
+           color:white;
+           padding:8px 45px;
+           border-radius:5px;
+           margin-left:30%;
+           
+       }
+      
+       .buttonregister3:hover{
+           
+           text-decoration:none;
+           color:white;
+        
+           
+       }
+       .buttonregister3:hover {
+           
+           transition: .3s;
+           background-color:#76658e;
+           
+       }
+       
+       .fieldset2{
+           
+           width:80%;
+           margin-left:10%;
+            
+       }
+       
+       .fiedset2, label{
+           
+           padding:5px; 0;
+       }
+       
+      
+       
+   </style> 
+  </head>
+  <body>
+    
+      <div class="row">
+          <div class="col-md-5">
+              <img src="images/logopp.png" id="logo">
+              <h1 style="text-align:center;" class="font-main">Bem vindos</h1>
+              <hr>
+              <h1 class="display-1" style="margin-top:3%; margin-left:10%;">Brothers</h1>
+          </div>
+          <div class="col-md-7">
+              <div class="row">
+                  <div class="col-md-2">
+                  
+                  </div>
+                  <div class="col-md-10" style="margin-top:5%;">
+                      <div class="row">
+                          <div class="col-md-12">
+                           <img src="images/imagem2.svg" class="imgcentro">
+                          </div>
+                          <div class="col-md-12">
+                            <h2 style="margin-bottom:10%; margin-top:-10%;" class="two-font">"A Felicidade só é  real quando é compartilhada"
+                            </h2>  
+                          </div>
+                      </div>                      
+                      
+                      
+                      <fieldset  id="form1">
+                          <form style="width:100%; text-align:center; padding:0 5%;" method="POST" action="login.php">
+                              <div class="form-group">
+                                  <label for="email" name="emailLogin" style="padding-bottom:10px; margin-top:4%;">Endereço de email</label>
+                                  <input type="email" name="emailLogin" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu endereço de email">
+                                  <small id="emailHelp" class="form-text text-muted">Nunca compartilhe seu email ou senha com terceiros.</small>
+                              </div>
+                              <div class="form-group">
+                                  <label for="senha" name="senhaLogin" style="padding-bottom:10px;">Senha</label>
+                                  <input type="password" name="senhaLogin"  class="form-control" id="exampleInputPassword1" placeholder="Digite sua senha">
+                              </div>
+                              <button type="submit" class="btn btn-primary" style="padding:8px  65px; margin:5% 0;">Entrar
+                              </button>
+                              <a href="" class="buttonregister3" id="buttonentrar">Cadastre-se</a>
+                              
+                          </form>
+                             
+                      </fieldset>
+                        <h2 style="margin-left:42%; padding-bottom:3px; color:white; display:none;" id="h2cadastro">Cadastro</h2>
+                      <fieldset class="fieldset2" style="display:none">
+                          
+                          <form class="form" role="form" autocomplete="off" style="text-align: center;padding:3px 120px;" id="form2" method="POST" action="cadastro.php">
+                                <div class="form-group">
+                                    <label for="nome">Nome</label>
+                                    <input name="nome" type="text" class="form-control" id="inputName" placeholder="Insira seu nome">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input name="email" type="email" class="form-control" id="inputEmail3" placeholder="email@gmail.com" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="senha">Senha</label>
+                                    <input name="senha" type="password" class="form-control" id="inputPassword3" placeholder="digite sua senha" title="At least 6 characters with letters and numbers" required="">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-success btn-lg float-right"  style="margin-bottom:20px;">Confirmar</button>
+                                    <button type="button" style="float-left; margin-right:40%; cursor:pointer; padding:10px 18px; color:white; font-size:18px;" id="buttonregister">Realizar login</button>
+                                </div>
+                            </form>
+                      </fieldset>
+                  </div>
+                  
+              </div>
+              
+          </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    </body>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        
+      $(document).ready(function(){
+          cores= ["drop-shadow(-15px 25px 10px #676767)", "drop-shadow(-15px 25px 10px #888888)", "drop-shadow(-15px 25px 10px #b4b4b4)", "drop-shadow(-15px 25px 10px #d1d1d1)", "drop-shadow(-15px 25px 10px #eaeaea)", "drop-shadow(-15px 25px 10px #ffffff)"]
+          
+            val3= 0
+            val5= "n"
+             
+              setInterval(function(){
+                  let brilho = cores[val3]
+                  if (val5=="m") {
+                      
+                      val3--
+                      
+                  }else{
+                      
+                      val3++
+                      
+                  }
+                  if (val3==5){
+                   
+                      val5="m"
+                      
+                      
+                  } else if(val3==0){ 
+                      
+                      val5="n"
+                  }
+                    
+                 
+               
+                   
+        $("#logo").css("filter", brilho)
+                  
+              
+              
+              }, 160);
+           $("#buttonentrar").click(function(e){
+               e.preventDefault()
+               $(".fieldset2").show()
+               $("#form1").hide()
+               $(".fieldset2").addClass("animate__animated animate__zoomIn")
+           })
+          
+          $("#buttonregister").click(function(e){
+               e.preventDefault()
+               $(".fieldset2").hide()
+               $("#form1").show()
+               $("#form1").addClass("animate__animated animate__zoomIn")
+           })
+          
+          
+      })
+    
+      
+      
+      </script>
+</html>
