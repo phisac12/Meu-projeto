@@ -19,7 +19,7 @@ $senhaLogin = md5(sha1($_POST['senhaLogin']));
 
     }else {
 
-        echo 'tua senha ta errada arrombado';
+        echo 'Senha incorreta';
 
 
     }
